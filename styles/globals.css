@@ -1,0 +1,275 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    background-color: #FAFAFA;
+}
+
+:root {
+    --primary: #3A5656;
+    --complementary: #E97F83;
+    --complementary-light: #FEE2E1;
+    --complementary-dark: #e2565b;
+    --background-color: #FAFAFA;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    padding: 0 15px;
+    height: 120px;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+    height: 80px;
+}
+
+.active {
+    background-color: white;
+}
+
+.header-logo {
+    width: 65px;
+    height: auto;
+}
+
+.nav-items svg {
+    width: 20px;
+    margin-right: 0.3rem;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.nav-link:hover {
+    color: var(--complementary);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-white {
+    color: #FAFAFA
+}
+
+.color-complementary {
+    color: var(--complementary);
+}
+
+.bg-complementary {
+    background-color: var(--complementary);
+    color: white;
+}
+
+.bg-complementary-light {
+    background-color: var(--complementary-light);
+    color: white;
+}
+
+#presentation {
+    height: 75vh;
+    background-color: #FAFAFA;
+}
+
+.presentation-text {
+    padding-top: 100px;
+}
+
+.presentation-text-margin {
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-top: -100px
+}
+
+.presentation-img-container {
+    height: 100%;
+    width: auto;
+    max-height: 63vh;
+}
+
+.presentation-img-container-mobile {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.presentation-img-container-mobile div {
+    position: relative;
+    margin-top: auto;
+    max-height: 320px;
+}
+
+.presentation-img-mobile {
+    width: auto !important;
+    min-width: auto !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.presentation-img {
+    width: auto !important;
+    min-width: auto !important;
+}
+
+.presentation-title {
+    font-size: clamp(1.9rem, 3vw, 3vw);
+}
+
+.presentation-subtitle {
+    font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+}
+
+@media (max-width:1280px) {
+    .presentation-img-container {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width:767px) {
+    #presentation {
+        background-image: url(/images/presentation-waves.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: contain;
+        height: 630px;
+    }
+    .presentation-text-margin {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:370px) {
+    #presentation {
+        background-image: url(/images/presentation-waves.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: contain;
+        height: 480px;
+    }
+    .presentation-text-margin {
+        margin-top: -90px
+    }
+    .presentation-img-container-mobile div {
+        max-height: 220px;
+    }
+}
+
+@media (max-width:320px) {
+    .presentation-title {
+        font-size: clamp(1.7rem, 6vw, 3rem);
+    }
+    .presentation-subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    }
+}
+
+.pink-background {
+    background-image: url(/images/large-presentation-waves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta {
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.cta:hover {
+    background-color: var(--complementary-dark);
+}
+
+#servicos {
+    background-image: url(/images/services/background-waves.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.section-title {
+    font-size: clamp(1.9rem, 3vw, 3rem);
+}
+
+@media (max-width:320px) {
+    .section-title {
+        font-size: clamp(1.4rem, 3vw, 3rem);
+    }
+}
+
+.colored-line {
+    height: 5px;
+    background-color: var(--complementary);
+    border-radius: 30px;
+    width: clamp(40px, 55px, 70px);
+}
+
+.service-grid {
+    margin-top: 110px;
+}
+
+.service-card-img {
+    max-width: 300px;
+    margin-top: -100px;
+    max-height: 260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sobre {
+    background-color: var(--complementary-light);
+}
+
+#instagramfeed {}
+
+.instagram-card img {
+    transition: all .4s ease-in-out;
+}
+
+.instagram-card:hover img {
+    border-radius: 30px;
+}
+
+.modal {
+    transition: opacity 1s ease;
+}
+
+.modal a svg {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.modal a {
+    cursor: pointer;
+    background-color: var(--complementary);
+}
+
+.modal a:hover {
+    background-color: var(--complementary-dark);
+}
+
+#rodape {
+    background-color: var(--primary);
+    border-top-right-radius: 5rem;
+}
+
+#rodape svg{
+    width: 0.75rem;
+}
